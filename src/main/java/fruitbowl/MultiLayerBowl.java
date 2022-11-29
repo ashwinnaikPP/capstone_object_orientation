@@ -11,12 +11,12 @@ public class MultiLayerBowl {
     }
 
     public void secondLayer(String fruit) {
-        System.out.println("2nd layer contains");
+        System.out.println("Fruits in 2nd layer are: ");
         System.out.println(fruit);
     }
 
     public void thirdLayer(String fruit) {
-        System.out.println("3rd layer contains");
+        System.out.println("Fruits in 3rd layer are: ");
         System.out.println(fruit);
     }
 
