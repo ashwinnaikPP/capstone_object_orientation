@@ -16,15 +16,33 @@ public class Runner {
         fruits.add(new SingleBowl("Banana", "Yellow", "Normal", "Medium"));
         fruits.add(new SingleBowl("Strawberry", "Red", "Sweet", "Small"));
 
-        FruitQuery fruitQuery = new FruitQuery(fruits);
+        FruitColor fruitColor = new FruitColor(fruits);
+        FruitType fruitType = new FruitType(fruits);
+        FruitSize fruitSize = new FruitSize(fruits);
+
         System.out.println("Enter 1 to segregate fruits by Color." +'\n' + "Enter 2 to segregate fruits by Type."
         +'\n' + "Enter 3 to segregate fruits by Size.");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         switch (number) {
-            case 1 -> fruitQuery.findFruitsByColor();
-            case 2 -> fruitQuery.findFruitsByType();
-            case 3 -> fruitQuery.findFruitsBySize();
+            case 1 -> {
+                System.out.println("Fruits segregated by Colors:");
+                fruitColor.colorInFirstLayer();
+                fruitColor.colorInSecondLayer();
+                fruitColor.colorInThirdLayer();
+            }
+            case 2 -> {
+                System.out.println("Fruits segregated by Type:");
+                fruitType.typeInFirstLayer();
+                fruitType.typeInSecondLayer();
+                fruitType.typeInThirdLayer();
+            }
+            case 3 -> {
+                System.out.println("Fruits segregated by Size:");
+                fruitSize.sizeInFirstLayer();
+                fruitSize.sizeInSecondLayer();
+                fruitSize.sizeInThirdLayer();
+            }
             default -> System.out.println("Invalid Choice!");
         }
     }

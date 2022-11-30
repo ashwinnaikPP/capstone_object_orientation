@@ -1,23 +1,21 @@
 package fruitbowl;
 
-import java.util.List;
-
 public class MultiLayerBowl {
 
 
-    public void firstLayer(String fruit) {
+    public void multiLayer(String fruit) {
+        System.out.println(fruit);
+    }
+
+    public void printFirstLayer(){
         System.out.println("Fruits in 1st layer are: ");
-        System.out.println(fruit);
     }
 
-    public void secondLayer(String fruit) {
-        System.out.println("Fruits in 2nd layer are: ");
-        System.out.println(fruit);
+    public void printSecondLayer(){
+        System.out.println('\n' + "Fruits in 2nd layer are: ");
     }
 
-    public void thirdLayer(String fruit) {
-        System.out.println("Fruits in 3rd layer are: ");
-        System.out.println(fruit);
+    public void printThirdLayer(){
+        System.out.println('\n' +"Fruits in 3rd layer are: ");
     }
-
 }
