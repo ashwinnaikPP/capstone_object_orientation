@@ -1,4 +1,4 @@
-package shoppingcart;
+package com.ultralesson.capstone.shoppingcart;
 
 import java.util.ArrayList;
 import java.util.List;
