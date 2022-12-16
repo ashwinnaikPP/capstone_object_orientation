@@ -1,4 +1,4 @@
-package shoppingcart;
+package com.ultralesson.capstone.shoppingcart;
 
 import java.util.List;
 import java.util.Scanner;

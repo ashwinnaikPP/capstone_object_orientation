@@ -1,4 +1,4 @@
-package shoppingcart;
+package com.ultralesson.capstone.shoppingcart;
 
 public class ProductOffer {
     public void offerOnMilk(int liters) {

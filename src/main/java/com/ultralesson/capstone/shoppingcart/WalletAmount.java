@@ -1,4 +1,4 @@
-package shoppingcart;
+package com.ultralesson.capstone.shoppingcart;
 
 public class WalletAmount {
     static float WALLET_AMOUNT = 1000;

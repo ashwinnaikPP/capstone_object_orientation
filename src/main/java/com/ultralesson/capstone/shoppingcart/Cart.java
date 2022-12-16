@@ -1,6 +1,4 @@
-package shoppingcart;
-
-import java.util.List;
+package com.ultralesson.capstone.shoppingcart;
 
 public class Cart {
     private String Product;
