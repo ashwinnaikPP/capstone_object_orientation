@@ -12,13 +12,6 @@ public class Bowl {
 
     private List<Fruit> fruits = new ArrayList<>();
 
-    public Bowl(String fruit, String color, String type, String size) {
-        this.fruit = fruit;
-        this.color = color;
-        this.type = type;
-        this.size = size;
-    }
-
     public Bowl() {
         this.fruits = new ArrayList<>();
     }
@@ -40,11 +33,14 @@ public class Bowl {
         fruits.remove(fruit);
     }
 
+    public List<Fruit> returnFruits() {
+        return fruits;
+    }
 
 
     @Override
     public String toString() {
-        return "SingleBowl{" +
+        return "Bowl{" +
                 "fruit='" + fruit + '\'' +
                 ", color='" + color + '\'' +
                 ", type='" + type + '\'' +

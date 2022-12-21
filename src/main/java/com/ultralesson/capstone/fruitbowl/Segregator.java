@@ -1,9 +1,11 @@
 package com.ultralesson.capstone.fruitbowl;
 
+import java.util.List;
+
 public class Segregator {
 
     private Bowl mixedBowl;
-    private MultiLayerBowl segregatedBowl;
+    private final MultiLayerBowl segregatedBowl;
 
     public Segregator(Bowl mixedBowl, MultiLayerBowl emptyLayerBowl) {
         this.mixedBowl = mixedBowl;
@@ -11,9 +13,16 @@ public class Segregator {
     }
 
 
+
+
     public MultiLayerBowl segregateByColor() {
 
         // Logic of segregation by color
+        for (Fruit fruit : mixedBowl.returnFruits()) {
+
+        }
+        System.out.println("mix " +mixedBowl);
+
         return segregatedBowl;
     }
 

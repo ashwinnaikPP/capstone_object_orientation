@@ -18,7 +18,6 @@ public class Runner {
         fruits.add(new Fruit("Banana", "Yellow", "Normal", "Medium"));
         fruits.add(new Fruit("Strawberry", "Red", "Sweet", "Small"));
 
-
         Bowl bowl = new Bowl(fruits);
 
 
@@ -28,10 +27,15 @@ public class Runner {
         Segregator segregator = new Segregator(bowl, multiLayerBowl);
         multiLayerBowl = segregator.segregateByColor();
 
+
         //Assertions
         // Check if all the fruits in the bowl are of same color
 
         multiLayerBowl = segregator.segregateByName();
+
+
+
+
 
     }
 }
