@@ -29,6 +29,7 @@ public class Bowl {
         fruits.add(fruit);
     }
 
+
     public void remove(Fruit fruit) {
         fruits.remove(fruit);
     }

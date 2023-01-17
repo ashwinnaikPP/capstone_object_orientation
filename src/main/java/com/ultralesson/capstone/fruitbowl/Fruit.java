@@ -14,6 +14,8 @@ public class Fruit {
         this.size = size;
     }
 
+    public Fruit() {}
+
     public String getColor() {
         return color;
     }
@@ -24,6 +26,10 @@ public class Fruit {
 
     public String getType() {
         return type;
+    }
+
+    public String getName() {
+        return name;
     }
 
 }
