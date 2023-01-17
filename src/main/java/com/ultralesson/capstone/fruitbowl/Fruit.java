@@ -1,10 +1,10 @@
 package com.ultralesson.capstone.fruitbowl;
 
 public class Fruit {
-    private String name;
-    private String color;
-    private String type;
-    private String size;
+    private final String name;
+    private final String color;
+    private final String type;
+    private final String size;
 
 
     public Fruit(String name, String color, String type, String size) {
@@ -13,8 +13,6 @@ public class Fruit {
         this.type = type;
         this.size = size;
     }
-
-    public Fruit() {}
 
     public String getColor() {
         return color;

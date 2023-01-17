@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 public class MultiLayerBowl {
 
-    private List<Bowl>  bowls = new ArrayList<>();
+    private final List<Bowl>  bowls = new ArrayList<>();
 
     public MultiLayerBowl() {
        this(3);

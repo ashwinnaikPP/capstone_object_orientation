@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Segregator {
 
-    private Bowl mixedBowl;
-    private MultiLayerBowl segregatedBowl;
+    private final Bowl mixedBowl;
+    private final MultiLayerBowl segregatedBowl;
 
     List<String> fruitsInFirstLayer = new ArrayList<>();
     List<String> fruitsInSecondLayer = new ArrayList<>();
