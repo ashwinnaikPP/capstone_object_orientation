@@ -1,41 +1,59 @@
 package com.ultralesson.capstone.shoppingcart;
 
+import java.util.List;
+import java.util.Scanner;
+
 public class Cart {
-    private String Product;
-    private int Amount;
-    private int Quantity;
 
-    public Cart(String product, int amount) {
-        Product = product;
-        Amount = amount;
+    private final List<Product> shoppingCart;
+
+    public Cart(List<Product> shoppingCart) {
+        this.shoppingCart = shoppingCart;
+    }
+    Product product = new Product();
+    Wallet walletAmount = new Wallet();
+    Offer productOffer = new Offer();
+    float amount;
+
+    private int quantityOfProduct() {
+        Scanner scanner = new Scanner(System.in);
+        product.setQuantity(scanner.nextInt());
+        return product.getQuantity();
     }
 
-    public Cart() {
-
+    public void productApple() {
+        for (Product cart1 : shoppingCart) {
+            if (cart1.getProduct() == "Apple") {
+                amount = cart1.getAmount();
+                calculateAmount(quantityOfProduct());
+            }
+        }
     }
 
-    public int getAmount() {
-        return Amount;
+    public void productMilk() {
+        for (Product cart1 : shoppingCart) {
+            if (cart1.getProduct() == "Milk") {
+                amount = cart1.getAmount();
+                calculateAmount(quantityOfProduct());
+                productOffer.offerOnMilk(product.getQuantity());
+            }
+        }
     }
 
-    public int getQuantity() {
-        return Quantity;
+    public void productPaper() {
+        for (Product cart1 : shoppingCart) {
+            if (cart1.getProduct() == "News Paper") {
+                amount = cart1.getAmount();
+                calculateAmount(quantityOfProduct());
+            }
+        }
     }
 
-    public String getProduct() {
-        return Product;
-    }
-
-    public void setQuantity(int quantity) {
-        Quantity = quantity;
-    }
-
-    @Override
-    public String toString() {
-        return "Cart{" +
-                "Product='" + Product + '\'' +
-                ", Amount=" + Amount +
-                ", Quantity=" + Quantity +
-                '}';
+    private void calculateAmount(int quantity) {
+        float total = quantity * amount;
+        System.out.println("The amount of the product is: " + total);
+        if(total >= 100) {
+           walletAmount.isDiscountApplicable(total);
+        }
     }
 }

@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
-        List<Cart> shoppingCart = new ArrayList<>();
-        shoppingCart.add(new Cart("Apple", 50));
-        shoppingCart.add(new Cart("Milk", 25));
-        shoppingCart.add(new Cart("News Paper", 5));
+        List<Product> productList = new ArrayList<>();
+        productList.add(new Product("Apple", 50));
+        productList.add(new Product("Milk", 25));
+        productList.add(new Product("News Paper", 5));
 
-        CartProduct cartProduct = new CartProduct(shoppingCart);
+        Cart cartProduct = new Cart(productList);
 
         System.out.println("Enter the product you wish to buy: Apple / Milk / Paper");
 
